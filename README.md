@@ -1,14 +1,13 @@
-# Self-Improving Autonomous Underwater Manipulation
+<p align="center">
+  <img width="100%" src="assets/teaser.jpeg">
+</p>
+
 ### In Submission 2024
 ### [Project Page](https://aquabot.cs.columbia.edu/)  | [Paper](https://ruoshiliu.github.io/resources/aquabot.pdf) | [Video](https://aquabot.cs.columbia.edu/assets/videos/icra_supp_final.mp4) | [Code](https://github.com/cvlab-columbia/aquabot)
 
 [Self-Improving Autonomous Underwater Manipulation](https://aquabot.cs.columbia.edu/)  
  [Ruoshi Liu](https://ruoshiliu.github.io/)<sup>1</sup>, [Huy Ha](https://www.linkedin.com/in/junbangliang/)<sup>1,2</sup>, [Mengxue Hou](https://www.mengxuehou.com/)<sup>3</sup>, [Shuran Song](https://shurans.github.io/)<sup>1,2</sup>, [Carl Vondrick](https://www.cs.columbia.edu/~vondrick/)<sup>1</sup> <br>
  <sup>1</sup>Columbia University, <sup>2</sup>Stanford University, <sup>3</sup>University of Notre Dame
-
-<p align="center">
-  <img width="100%" src="assets/teaser.jpeg">
-</p>
 
 ## Hardware Setup
 Here's a minimal shopping list to reproduce our setup:
@@ -29,6 +28,7 @@ We used the V-EVO robot which is the cheapest model which can be purchased from 
 
 ### Regarding Camera
 we chose a cheap fishing camera on amazon for visual input.
+
 Pros:
 - The camera itself is very well-built and robust. During experiments, we have tried streaming multiple cameras 24/7 underwater over the course of multiple days without issue.
 - The camera has a wide field of view even underwater.
@@ -39,7 +39,7 @@ Cons:
 - The camera body doesn't have any indicator sign suggesting the upright direction, requiring manual calibration.
 
 ### Regarding Software SDK
-QYSEA provides a software SDK to control the robot through a wired or wireless connection. You can find a documentation here: https://docs.qysea.com/qysea_sdk/#/en/README. This is a proprietary software that you need to purchase from QYSEA. It provides control and communication APIs for visuomotor control.
+QYSEA provides a software SDK to control the robot through a wired or wireless connection. You can find a documentation here: https://docs.qysea.com/qysea_sdk/#/en/README. This is a proprietary software that you need to purchase from QYSEA. It provides neccessary APIs for visuomotor control.
 
 ### Regarding I/O
 We use a video capture card (linked above) with PCIe connection to a desktop to real-time capture and process the camera inputs. At the very least, one fishing camera should be mounted on the robot body. In addition, we also mounted 2 additional cameras at the corners of the swimming pool to localize the robot's 3D position in the pool for navigation purposes.
