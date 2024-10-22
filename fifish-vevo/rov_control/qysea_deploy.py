@@ -324,15 +324,7 @@ if __name__ == '__main__':
     scaling_factor = [1.2, 1.2, 1.2, 1.2]
     base_dir = '../../policy/checkpoints/'
     model_dir = 'n_obs_2_n_pred_2_interval_100_batch_size_32_lr_0.0001_loss_mse_seperate_encoder_True_status_conditioned_False__obs_interval_300_bottleneck-dim-None_vae_weight-0.0_weight-decay-0.1'
-    checkpoint = 'checkpoint_epoch_25.pth'
-    # base_dir = '../../policy/09-18/checkpoints/'
-    # model_dir = 'n_obs_2_n_pred_2_interval_100_batch_size_32_lr_0.0001_loss_mse_seperate_encoder_True_status_conditioned_False__obs_interval_300_bottleneck-dim-None_vae_weight-0.0'
-    # checkpoint = 'checkpoint_epoch_49.pth'
-
-    # rescue
-    # base_dir = '../../policy/rescue/checkpoints/'
-    # model_dir = 'n_obs_2_n_pred_2_interval_100_batch_size_32_lr_0.0001_loss_mse_seperate_encoder_True_status_conditioned_False__obs_interval_300_bottleneck-dim-None_vae_weight-0.0'
-    # checkpoint = 'checkpoint_epoch_10.pth'
+    checkpoint = 'best_model.pth'
 
     checkpoint_dir = os.path.join(base_dir, model_dir, checkpoint)
     robot_deployment = QyseaDeployment(checkpoint_dir, n_obs=2, n_pred=2, delay=0, interval=100, obs_interval=300, scaling_factor=scaling_factor, bottleneck_dim=None)
