@@ -7,7 +7,7 @@
  <sup>1</sup>Columbia University, <sup>2</sup>Stanford University, <sup>3</sup>University of Notre Dame
 
 <p align="center">
-  <img width="100%" src="figures/teaser.jpg">
+  <img width="100%" src="assets/teaser.jpeg">
 </p>
 
 ## Hardware Setup
