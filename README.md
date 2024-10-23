@@ -91,6 +91,10 @@ demo_data/
 │   │   ├── 22246574.jpg
 │   │   └── ... (many more .jpg files with similar timestamp patterns)
 │   │
+│   ├── rov_mount/            # Contains .jpg files from the mounted ROV camera
+│   │   ├── 22246577.jpg
+│   │   └── ... (many more .jpg files with similar timestamp patterns)
+│   │
 │   ├── status/              # Contains .json status files with timestamp-based names
 │   │   ├── 22247039.json
 │   │   └── ... (many more .json files with similar timestamp patterns)
@@ -99,6 +103,7 @@ demo_data/
 │   └── ... (follows the same structure as episode_001)
 ├──...
 ```
+Note that `cctv_left`, `cctv_right`, and `status` folders are optional for policy training but can be very useful for other things such as localization, analysis, or visualization. `status` contains proprioceptive data such as compass, IMU, depth that could be useful as policy input but not used in this project.
 
 #### Policy Training
 After demonstration data is collected, you can use the following command to train a robot policy
@@ -120,8 +125,7 @@ python train.py
 This script uses a simple MLP as the action decoder of the policy. This can be replaced by a diffusion policy or action-trunked transformer (ACT).
 
 #### Policy Deployment
-Once a policy is trained, you can deploy the policy. You need to first run the `qysea_xbox_subprocess.py` which is a python process to control the robot. Once this process is successfully run, you can then run `qysea_deploy.py` for policy inference.
-`qysea_xbox_subprocess.py`
+Once a policy is trained, you can deploy the policy. You need to first run the [`qysea_xbox_subprocess.py`](fifish-vevo/rov_control/qysea_xbox_subprocess.py) which is a python process to control the robot. Once this process is successfully run, you can then run [`qysea_deploy.py`](fifish-vevo/rov_control/qysea_deploy.py) for policy inference. During policy rollouts `qysea_deploy.py` will send policy output (actions) to `qysea_xbox_subprocess.py` through a pipe connection in pickled packets.
 ```
 python qysea_xbox_subprocess.py
 python qysea_deploy.py
@@ -129,10 +133,10 @@ python qysea_deploy.py
 Once both scripts are up and running, you can press `m` and `a` on the keyboard to switch between manual control (`m`) and policy control (`a`).
 
 #### Self Learning (Optional)
-Once a policy is learned, you can run `self_learn.py` to perform self learning of the robot's speed profile for a predefined task and reward.
+Once a policy is learned, you can run [`self_learn.py`](fifish-vevo/rov_control/self_learn.py) to perform self learning of the robot's speed profile for a predefined task and reward.
 
 #### Localization and Navigation (Optional)
-Under `fifish-vevo/object_detection` and `fifish-vevo/camera_control`, you can find our code for:
+Under [`object_detection`](fifish-vevo/object_detection) and [`camera_control`](fifish-vevo/camera_control), you can find our code for:
 - Stereo-calibrate both the intrinsics and the extrinsics of the external cameras
 - Capture data from cameras to create training data
 - Generate a synthetic data for training an underwater robot object detector
