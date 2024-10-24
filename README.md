@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="100%" src="assets/teaser.jpeg">
-</p>
+[![Video Title](assets/teaser.jpeg)]([https://www.youtube.com/watch?v=VIDEO_I](https://www.youtube.com/watch?v=iBB980UWdes)D)
 
 ### In Submission 2024
 ### [Project Page](https://aquabot.cs.columbia.edu/)  | [Paper](https://ruoshiliu.github.io/resources/aquabot.pdf) | [Video](https://www.youtube.com/watch?v=iBB980UWdes)
