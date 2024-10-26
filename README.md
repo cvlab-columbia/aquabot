@@ -13,7 +13,7 @@ Here's a minimal shopping list to reproduce our setup:
 - Robot: [QYSEA FIFISH V-EVO](https://store.qysea.com/fifish-v-evo.html) ($1599)
 - Fishing Camera: https://a.co/d/dYumbWQ ($170)
 - 3D Printer (optional): [Bambu Lab P1S](https://us.store.bambulab.com/products/p1s?variant=42153262743688&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3YCVxsSwEl0RNko1cFlSil5XzdDir5UY9je2N1FGthGgrWJJnZAKIaAlrPEALw_wcB) ($550)
-- Camera Base:  [Onshape-Project](https://cad.onshape.com/documents/fa17da090f7aaf212b684a17/w/90f33a6a51457a06cd56540d/e/ea42e7c53347be446ba67cbf?renderMode=0&uiState=6717f62abcfd9172e547272b) | [STL File](resources/camera-base.stl)
+- Camera Base:  [Onshape Project](https://cad.onshape.com/documents/fa17da090f7aaf212b684a17/w/90f33a6a51457a06cd56540d/e/ea42e7c53347be446ba67cbf?renderMode=0&uiState=6717f62abcfd9172e547272b) | [STL File](resources/camera-base.stl)
 - Camera Mount: [Onshape Proejct](https://cad.onshape.com/documents/720b547ac66be2e3e2f0bfc1/w/933ca8e0da7cb8fe52c88099/e/e83c920b97c6a1bdf4fe603d?renderMode=0&uiState=6717f6cd3be4ee27e5b032ef) | [STL File](resources/camera-base.stl) (adjust sketch 3 to adjust for the camera tilting angle)
 - Video Capture Card: [ACASIS PCIe](https://a.co/d/6ba8I1W) ($280)
 - Software SDK: [QYSEA DEVELOPER FOR V-EVO](https://www.maverickdrone.com/products/qysea-developer-for-v-evo?_pos=2&_sid=5bf6cc593&_ss=r) ($1500)
