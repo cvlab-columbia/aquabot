@@ -1,6 +1,6 @@
 [![Video Title](assets/teaser.jpeg)](https://www.youtube.com/watch?v=iBB980UWdes)
 
-### In Submission 2024
+### ICRA 2024
 ### [Project Page](https://aquabot.cs.columbia.edu/)  | [Paper](https://ruoshiliu.github.io/resources/aquabot.pdf) | [Video](https://www.youtube.com/watch?v=iBB980UWdes)
 
 [Self-Improving Autonomous Underwater Manipulation](https://aquabot.cs.columbia.edu/)  
